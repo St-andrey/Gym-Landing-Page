@@ -1,0 +1,110 @@
+@import "vars";
+@import "libs";
+@import "fonts";
+
+/* === common styles ===*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: red;
+}
+li{
+  list-style: none;
+}
+body {
+  font-size: $text;
+  font-family: $mainFont;
+  line-height: $lineHeight;
+  color: blue;
+}
+.container-outer{
+ max-width: 1960px;
+ margin: 0 auto;
+ padding-left: 20px;
+ padding-right: 20px;
+}
+.container-inner{
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.logo {
+  text-transform: capitalize;
+  &--main {
+    font-weight: 900;
+    font-size: 36px;
+    position: relative;
+    &:after {
+      content: "up";
+      text-transform: capitalize;
+      color: $accentLogo;
+    }
+  }
+  &--logo-monochrome {
+    font-size: $subtitle;
+    color: &accentBlue;
+    &:after {
+      content: "up";
+      text-transform: capitalize;
+      color: $accentBlue;
+    }
+  }
+}
+.section-header {
+  text-align: center;
+
+  &__subtitle {
+    font-size: $subtitle;
+    text-transform: capitalize;
+    color: $accentBlue;
+    margin-bottom: 20px;
+  }
+  &__title {
+    font-size: $h2;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 31px;
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      display: block;
+      height: 2px;
+      width: 60px;
+      bottom: 0px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: $accentRed;
+    }
+  }
+}
+.button {
+  color: $secondaryText;
+  background-color: transparent;
+  border: 2px solid $accentRed;
+  border-radius: 5px;
+  &--active {
+    background: linear-gradient(90deg, rgba($gradStart, 0.9), rgba($gradEnd, 0.9));
+  }
+}
+/*=== Header ===*/
+.header{
+  background: url(../img/header-bg.png);
+  background-position: 50% 50%;
+  background-size: cover;
+}
+/*=== /Header ===*/
+
+/*=== Header ===*/
+/*=== /Header ===*/
+
+/*=== Header ===*/
+/*=== /Header ===*/
+
+/*=== Header ===*/
+/*=== /Header ===*/
+
+@import "media";
