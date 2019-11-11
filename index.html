@@ -6,25 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ShapeUp Project</title>
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
     <script src="https://kit.fontawesome.com/164b56f10c.js"></script>
 </head>
 
 <body>
-    <div class="wrapper">
-        <!--header-->
+
+    <!--Header-->
+    <div class="container-outer">
         <header class="header">
-            <div class="container">
-                <div class="header-header">
-                    <div class="header-logo logo">
-                        <p class="logo-text">Shape</p>
+            <div class="container-inner">
+                <div class="header__header">
+                    <div class="header__logo logo logo--main">
+                        shape
                     </div>
-                    <nav class="header-nav-list">
-                        <ul class="header-nav-items">
-                            <!--text--red text--blue заменить-->
-                            <li class="header-nav__item"><a class="header-nav__link text--red" href="#">home</a></li>
+                    <nav class="header__nav">
+                        <ul class="header__nav-list">
+                            <li class="header-nav__item"><a class="header-nav__link header-nav__link--active"
+                                    href="#">home</a></li>
                             <li class="header-nav__item"><a class="header-nav__link" href="#">about</a></li>
                             <li class="header-nav__item"><a class="header-nav__link" href="#">trainers</a></li>
                             <li class="header-nav__item"><a class="header-nav__link" href="#">service</a></li>
@@ -35,135 +34,214 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="header-main">
-                    <h1 class="header-slogan">
-                        <span class="text--blue header-slogan--small">build</span> your body</br>
-                        <span class="text--blue header-slogan--small">transform</span> your life
+                <div class="header__main">
+                    <h1 class="header__main-slogan">
+                        <span class="header__slogan--sub">build</span> your body</br>
+                        <span class="header__slogan--sub">transform</span> your life
                     </h1>
-                    <p class="header-text">
+                    <p class="header__main-text">
                         Curabitur ac volutpat odio. Nunc eget eros viverra, laoreet ligula eget, interdum augue.</br>
                         Pellentesque ornare mauris a hendrerit imperdiet.
                     </p>
-                    <div class="header-buttons">
-                        <button class="button header-button active-item">get started</button>
-                        <button class="button header-button">learn more</button>
+                    <div class="header__buttons">
+                        <button class="button--active header__buttons-button">get started</button>
+                        <button class="button header__buttons-button">learn more</button>
                     </div>
                 </div>
             </div>
         </header>
-        <!--About Section-->
-        <section class="section-about">
-            <div class="container">
-                <div class="text-content">
-                    <div class="section-header section-header-about-section">
-                        <h4 class="section-header__subtitle section-header__sublitle--about">about shape</h4>
-                        <h2 class="section-header__title">welcome to healthy life</h2>
-                        <div class="section-header__underline"></div>
-                    </div>
-                    <div class="about-content">
-                        <h3 class="about-content__header">Nunc euismod ante at purus elementum porttitor.</br>
-                            Ut nisi nisl, auctor et imperdiet quis risus.
-                        </h3>
-                        <p class="about-content__text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas est porttitor,
-                            malesuada tellus aliquet, vehicula ipsum. Suspendisse porttitor sed dolor ac vehicula.
-                            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
-                            turpis egestas. Morbi iaculis tellus vestibulum est accumsan commodo. Curabitur
-                            sollicitudin, eros vitae vulputate euismod, nibh tortor accumsan tellus,
-                            fringilla hendrerit ligula eros nec velit.
-                        </p>
-                        <a href="#" class="contact-link">learn more</a>
-                    </div>
-                </div>
-                <div class="video-content">
-
-
-                </div>
-            </div>
-        </section>
-        <!--Trainers section-->
-        <section class="trainers-section">
-            <div class="container">
-                <div class="section-header section-header--trainers-section">
-                    <h4 class="section-header__subtitle">meet</h4>
-                    <h2 class="section-header__title">our trainers</h2>
-                    <div class="section-header__underline"></div>
-                </div>
-                <div class="trainers-cards">
-                    <!--Заанимировать имена тренеров на JS-->
-                    <img src="img/trainer1.png" alt="" class="trainer__card">
-                    <img src="img/trainer2.png" alt="" class="trainer__card trainer__card--focused">
-                    <img src="img/trainer3.png" alt="" class="trainer__card">
-                    <img src="img/trainer4.png" alt="" class="trainer__card">
-                    <img src="img/trainer5.png" alt="" class="trainer__card">
-                </div>
-            </div>
-        </section>
-        <!--Programs Section-->
-        <section class="programs-section">
-            <div class="container">
-                <div class="section-header section-header--programs-section">
-                    <h4 class="section-header__subtitle">choose</h4>
-                    <h2 class="section-header__title">our programs</h2>
-                    <div class="section-header__underline"></div>
-                </div>
-                <div class="programs-cards">
-                    <div class="program-card">
-                        <div class="program-card__pic program-card__pic--1"></div>
-                        <h2 class="program-card__title">body building programs</h2>
-                        <p class="program-card__description">Sed augue enim, lacinia non dui ut, mollis vulputate
-                            felis. Vivamus consequat bibendum ullamcorper. Donec
-                            sed nibh aliquet odio efficitur sagittis.
-                        </p>
-                        <button class="button program-card__button">learn more</button>
-                    </div>
-                    <div class="program-card">
-                        <div class="program-card__pic program-card__pic--2"></div>
-                        <h2 class="program-card__title">weight loose programs</h2>
-                        <p class="program-card__description">
-                            Sed augue enim, lacinia non dui ut, mollis vulputate
-                            felis. Vivamus consequat bibendum ullamcorper. Donec
-                            sed nibh aliquet odio efficitur sagittis.
-                        </p>
-                        <button class="button program-card__button active-item">learn more</button>
-                    </div>
-                    <div class="program-card">
-                        <div class="program-card__pic program-card__pic--3"></div>
-                        <h2 class="program-card__title">spa programs</h2>
-                        <p class="program-card__description">
-                            Sed augue enim, lacinia non dui ut, mollis vulputate
-                            felis. Vivamus consequat bibendum ullamcorper. Donec
-                            sed nibh aliquet odio efficitur sagittis.
-                        </p>
-                        <button class="button program-card__button">learn more</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--Reviews Section-->
-        <section class="reviews-section">
-            <div class="container">
-                <div class="section-header section-header--reviews-section">
-                    <h4 class="section-header__subtitle">reviews</h4>
-                    <h2 class="section-header__title">what our client say</h2>
-                    <div class="section-header__underline"></div>
-                </div>
-                <div class="slider">
-                    <div class="slider-card">
-                        <div class="card-image">
-                            <img src="img/client_pic_1.png" alt="clients_reviews">
+        <!--/Header-->
+        <!--Main-->
+        <main>
+            <!--About Section-->
+            <section class="about">
+                <div class="container-inner col-6">
+                    <div class="about__text-box">
+                        <div class="section-header section-header--about">
+                            <p class="section-header__subtitle">about
+                                <span class="logo logo-monochrome">
+                                    shape
+                                </span>
+                            </p>
+                            <h2 class="section-header__title">welcome to healthy life</h2>
                         </div>
-                        <div class="card-review">
-                            <h2 class="card-review">Rebecca Morrison</h2>
-
+                        <div class="about__content">
+                            <h3 class="about__content-header">Nunc euismod ante at purus elementum porttitor.</br>
+                                Ut nisi nisl, auctor et imperdiet quis risus.
+                            </h3>
+                            <p class="about__content-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas est
+                                porttitor,
+                                malesuada tellus aliquet, vehicula ipsum. Suspendisse porttitor sed dolor ac
+                                vehicula.
+                                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
+                                turpis egestas. Morbi iaculis tellus vestibulum est accumsan commodo. Curabitur
+                                sollicitudin, eros vitae vulputate euismod, nibh tortor accumsan tellus,
+                                fringilla hendrerit ligula eros nec velit.
+                            </p>
+                            <a href="#" class="about__content-link">learn more</a>
                         </div>
+                    </div>
+                    <div class="about__img-box">
+                        <div class="about__video-main"><img src="" alt="workout main" class="about__main-img"></div>
+                        <div class="about__video-secondary">
+                            <img src="" alt="" class="about__secondary-img">
+                            <img src="" alt="" class="about__secondary-img">
+                            <img src="" alt="" class="about__secondary-img block--active">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--Trainers section-->
+            <section class="trainers">
+                <div class="container-inner">
+                    <div class="section-header section-header--trainers">
+                        <h4 class="section-header__subtitle">meet</h4>
+                        <h2 class="section-header__title">our trainers</h2>
+                    </div>
+                    <ul class="trainers__cards">
+                        <!--lii-->
+                        <img src="img/trainer1.png" alt="" class="trainer__card">
+                        <img src="img/trainer2.png" alt="" class="trainer__card trainer__card--focused">
+                        <img src="img/trainer3.png" alt="" class="trainer__card">
+                        <img src="img/trainer4.png" alt="" class="trainer__card">
+                        <img src="img/trainer5.png" alt="" class="trainer__card">
+                    </ul>
+                </div>
+            </section>
+            <!--Programs Section-->
+            <section class="programs">
+                <div class="container-inner">
+                    <div class="section-header section-header--programs">
+                        <h4 class="section-header__subtitle">meet</h4>
+                        <h2 class="section-header__title">our trainers</h2>
+                    </div>
+                    <div class="programs__cards">
+                        <div class="programs__item program-card">
+                            <div class="program-card__pic">
+                                <img src="" alt="" class="program-card__img">
+                            </div>
+                            <h2 class="program-card__title">body building programs</h2>
+                            <p class="program-card__description">Sed augue enim, lacinia non dui ut, mollis vulputate
+                                felis. Vivamus consequat bibendum ullamcorper. Donec
+                                sed nibh aliquet odio efficitur sagittis.
+                            </p>
+                            <button class="button program-card__button">learn more</button>
+                        </div>
+                        <div class="programs__item program-card">
+                            <div class="program-card__pic">
+                                <img src="" alt="" class="program-card__img">
+                            </div>
+                            <h2 class="program-card__title">body building programs</h2>
+                            <p class="program-card__description">Sed augue enim, lacinia non dui ut, mollis vulputate
+                                felis. Vivamus consequat bibendum ullamcorper. Donec
+                                sed nibh aliquet odio efficitur sagittis.
+                            </p>
+                            <button class="button button--active program-card__button">learn more</button>
+                        </div>
+                        <div class="programs__item program-card">
+                            <div class="program-card__pic">
+                                <img src="" alt="" class="program-card__img">
+                            </div>
+                            <h2 class="program-card__title">body building programs</h2>
+                            <p class="program-card__description">Sed augue enim, lacinia non dui ut, mollis vulputate
+                                felis. Vivamus consequat bibendum ullamcorper. Donec
+                                sed nibh aliquet odio efficitur sagittis.
+                            </p>
+                            <button class="button program-card__button">learn more</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--Reviews Section-->
+            <section class="reviews">
+                <div class="container-inner">
+                    <div class="section-header section-header--programs">
+                        <h4 class="section-header__subtitle">meet</h4>
+                        <h2 class="section-header__title">our trainers</h2>
+                    </div>
+                    <div class="reviews-slider">
+                        <div class="reviews-slider__card">
+                            <div class="reviews-slider__image">
+                                <img src="img/client_pic_1.png" alt="clients_reviews">
+                            </div>
+                            <div class="reviews-slider__content">
+                                <h3 class="reviews-slider__subtitle">rebecca morrison</h3>
+                                <p class="reviews-slider__subtitle">social worker</p>
+                                <p class="reviews-slider__text">Curabitur interdum nulla ligula, ac iaculis est venon.
+                                    Quisque auctor, ex id posuere aliquam, lorem mauris
+                                    venenatis sem, eu facilisis magna nibh . Praesent
+                                    laoreet leo diam, ut suscipit purus malesuada laoreet.
+                                    Aliquam erat volutpat.
+                                </p>
+                                <div class="reviews-slider__rank"></div>
+                            </div>
+                        </div>
+                        <div class="reviews-slider__card">
+                            <div class="reviews-slider__image">
+                                <img src="img/client_pic_1.png" alt="clients_reviews">
+                            </div>
+                            <div class="reviews-slider__content">
+                                <h3 class="reviews-slider__subtitle">daniel bloomberg</h3>
+                                <p class="reviews-slider__subtitle">salesman</p>
+                                <p class="reviews-slider__text">Curabitur interdum nulla ligula, ac iaculis est venon.
+                                    Quisque auctor, ex id posuere aliquam, lorem mauris
+                                    venenatis sem, eu facilisis magna nibh . Praesent
+                                    laoreet leo diam, ut suscipit purus malesuada laoreet.
+                                    Aliquam erat volutpat.
+                                </p>
+                                <div class="reviews-slider__rank"></div>
+                            </div>
+                        </div>
+                        <div class="reviews-slider__card">
+                            <div class="reviews-slider__image">
+                                <img src="img/client_pic_1.png" alt="clients_reviews">
+                            </div>
+                            <div class="reviews-slider__content">
+                                <h3 class="reviews-slider__subtitle">rebecca morrison</h3>
+                                <p class="reviews-slider__subtitle">social worker</p>
+                                <p class="reviews-slider__text">Curabitur interdum nulla ligula, ac iaculis est venon.
+                                    Quisque auctor, ex id posuere aliquam, lorem mauris
+                                    venenatis sem, eu facilisis magna nibh . Praesent
+                                    laoreet leo diam, ut suscipit purus malesuada laoreet.
+                                    Aliquam erat volutpat.
+                                </p>
+                                <div class="reviews-slider__rank"></div>
+                            </div>
+                        </div>
+                        <div class="reviews-slider__card">
+                            <div class="reviews-slider__image">
+                                <img src="img/client_pic_1.png" alt="clients_reviews">
+                            </div>
+                            <div class="reviews-slider__content">
+                                <h3 class="reviews-slider__subtitle">daniel bloomberg</h3>
+                                <p class="reviews-slider__subtitle">salesman</p>
+                                <p class="reviews-slider__text">Curabitur interdum nulla ligula, ac iaculis est venon.
+                                    Quisque auctor, ex id posuere aliquam, lorem mauris
+                                    venenatis sem, eu facilisis magna nibh . Praesent
+                                    laoreet leo diam, ut suscipit purus malesuada laoreet.
+                                    Aliquam erat volutpat.
+                                </p>
+                                <div class="reviews-slider__rank"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews-slider__dots">
 
                     </div>
                 </div>
-                <!-- Слайдер сверстать-->
-                <!--Pricing Section-->
-                <!--blog Section-->
-            </div>
+            </section>
+            <!--Pricing Section-->
+            <!--Blog Section-->
+            <!--BuyNow Section -->
+        </main>
+        <footer>
+
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
